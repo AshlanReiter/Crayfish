@@ -86,39 +86,41 @@ body{
     color:rgb(36, 188, 235);
 }
 
-/* ===== BELOW HEADER ===== */
+/* ===== ABOUT US TITLE ===== */
 
-.content{
+.about-title{
     width:100%;
-    height:200px;
-    position:relative;
+    min-height:220px;
+    box-sizing:border-box;
+    padding:45px 50px 45px;
     display:flex;
-    align-items:flex-start;
+    flex-direction:column;
+    justify-content:center;
 }
 
-.content h1{
-    margin:0;
-    padding-left:50px;
-    padding-top:30px;
+.about-title span{
+    margin-bottom:10px;
+    color:rgb(36,188,235);
+    font-family:Arial;
+    font-size:14px;
+    font-weight:bold;
+    letter-spacing:3px;
+}
+
+.about-title h1{
+    margin:0 0 12px;
     color:#fff;
     font-family:'Times New Roman';
-    font-size:40px;
-    letter-spacing:2px;
-    line-height:1.05;
-    animation: slideIn 1s ease-out;
+    font-size:52px;
+    letter-spacing:1px;
 }
 
-@keyframes slideIn {
-    from{
-        transform: translateX(-100%);
-    }
-    to{
-        transform: translateX(0);
-    }
-}
-
-.content h1 span{
-    color:rgb(36,188,235);
+.about-title p{
+    max-width:700px;
+    color:#eee;
+    font-family:Arial;
+    font-size:16px;
+    line-height:1.7;
 }
 
 /* ===== CRAYFISH NAVIGATION ===== */
@@ -652,6 +654,76 @@ body{
     color:rgb(36,188,235);
 }
 
+/* ===== FOOTER ===== */
+
+.footer{
+    width:100%;
+    background:#111;
+    color:#fff;
+}
+
+.footer-content{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:55px 0 45px;
+    display:grid;
+    grid-template-columns:2fr 1fr 1.5fr 1fr;
+    gap:45px;
+}
+
+.footer h2{
+    margin:0 0 8px;
+    font-family:'Times New Roman';
+    font-size:28px;
+}
+
+.footer h3{
+    margin:0 0 18px;
+    color:rgb(36,188,235);
+    font-family:Arial;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.footer p,
+.footer a{
+    margin:0 0 10px;
+    color:#bbb;
+    font-family:Arial;
+    font-size:13px;
+    line-height:1.7;
+}
+
+.footer a{
+    display:block;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+
+.footer a:hover{
+    color:rgb(36,188,235);
+}
+
+.footer-brand p{
+    color:#888;
+}
+
+.footer-bottom{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+    padding:20px 0;
+    border-top:1px solid #333;
+    text-align:center;
+}
+
+.footer-bottom p{
+    margin:0;
+    color:#777;
+    font-size:12px;
+}
+
 /*  =====================
        RESPONSIVENESS
     ===================== */
@@ -701,7 +773,7 @@ body{
         padding:15px 10px;
     }
     .menu ul li{
-        font-size:10px;
+        font-size:9px;
     }
 }
 
@@ -719,54 +791,61 @@ body{
         padding:12px 5px;
     }
     .menu ul li{
-        font-size:9px;
+        font-size:8px;
     }
 }
 
-/* ===== BELOW HEADER ===== */
+/* ===== ABOUT US TITLE ===== */
 
 @media (max-width:1000px){
-    .content{
-        height:200px;
-    }
-    .content h1{
+    .about-title{
+        min-height:200px;
         padding-left:40px;
-        padding-top:30px;
-        font-size:36px;
+    }
+
+    .about-title h1{
+        font-size:46px;
     }
 }
 
 @media (max-width:750px){
-    .content{
-        height:200px;
+    .about-title{
+        min-height:190px;
+        padding:35px 30px;
     }
-    .content h1{
-        padding-left:30px;
-        padding-top:30px;
-        font-size:32px;
+
+    .about-title h1{
+        font-size:40px;
+    }
+
+    .about-title p{
+        font-size:15px;
     }
 }
 
 @media (max-width:500px){
-    .content{
-        height:200px;
+    .about-title{
+        min-height:180px;
+        padding:30px 20px;
     }
-    .content h1{
-        padding-left:20px;
-        padding-top:25px;
-        font-size:28px;
-        letter-spacing:1px;
+
+    .about-title h1{
+        font-size:34px;
+    }
+
+    .about-title p{
+        font-size:14px;
     }
 }
 
 @media (max-width:360px){
-    .content{
-        height:200px;
+    .about-title{
+        min-height:170px;
+        padding:25px 15px;
     }
-    .content h1{
-        padding-left:15px;
-        padding-top:20px;
-        font-size:25px;
+
+    .about-title h1{
+        font-size:29px;
     }
 }
 
@@ -957,5 +1036,24 @@ body{
     .info-card th,
     .info-card td{
         padding:10px;
+    }
+}
+
+@media (max-width:500px){
+    .footer-content{
+        width:88%;
+        grid-template-columns:1fr;
+        gap:35px;
+        padding:45px 0 35px;
+    }
+
+    .footer-bottom{
+        width:88%;
+    }
+}
+
+@media (max-width:360px){
+    .footer h2{
+        font-size:25px;
     }
 }
