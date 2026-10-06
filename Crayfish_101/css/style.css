@@ -701,7 +701,7 @@ body{
         padding:15px 10px;
     }
     .menu ul li{
-        font-size:11px;
+        font-size:10px;
     }
 }
 
@@ -719,7 +719,7 @@ body{
         padding:12px 5px;
     }
     .menu ul li{
-        font-size:10px;
+        font-size:9px;
     }
 }
 
@@ -815,25 +815,25 @@ body{
         font-size:10px;
     }
     .tab-indicator{
-        width:140px;
+        width:130px;
     }
     #history:checked ~ .crayfish-nav .tab-indicator{
         transform:translateX(0);
     }
     #about:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(140px);
+        transform:translateX(130px);
     }
     #types:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(280px);
+        transform:translateX(260px);
     }
     #care:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(420px);
+        transform:translateX(390px);
     }
     #handling:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(560px);
+        transform:translateX(520px);
     }
     #breeding:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(700px);
+        transform:translateX(650px);
     }
 }
 
@@ -847,25 +847,25 @@ body{
         font-size:8px;
     }
     .tab-indicator{
-        width:120px;
+        width:100px;
     }
     #history:checked ~ .crayfish-nav .tab-indicator{
         transform:translateX(0);
     }
     #about:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(120px);
+        transform:translateX(100px);
     }
     #types:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(240px);
+        transform:translateX(200px);
     }
     #care:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(360px);
+        transform:translateX(300px);
     }
     #handling:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(480px);
+        transform:translateX(400px);
     }
     #breeding:checked ~ .crayfish-nav .tab-indicator{
-        transform:translateX(600px);
+        transform:translateX(500px);
     }
 }
 
