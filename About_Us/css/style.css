@@ -623,18 +623,17 @@ body{
 
 @media (max-width:750px){
     .navbar{
-        height:auto;
-        min-height:75px;
+        height: 65px;
     }
 
     .icon{
-        width:85px;
+        width:80px;
         min-width:85px;
     }
 
     .icon img{
         padding-left:20px;
-        width:60px;
+        width:55px;
     }
 
     .menu{
@@ -657,14 +656,18 @@ body{
 }
 
 @media (max-width:500px){
+    .navbar{
+        height: 55px;
+    }
+
     .icon{
-        width:70px;
+        width:60px;
         min-width:70px;
     }
 
     .icon img{
         padding-left:15px;
-        width:55px;
+        width:45px;
     }
 
     .menu ul{
