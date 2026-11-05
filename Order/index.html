@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuya Joms Line - Order Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+            <div class="icon">
+                <img src="../Home/img/logo.png" alt="Kuya Joms Line Logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <!-- Step up two folders to find the Home folder -->
+                    <li><a href="../Home/index.html">HOME</a></li>
+                    <li><a href="../Order/index.html" class="active">ORDER</a></li>
+                    <li><a href="../Crayfish_101/index.html">CRAYFISH 101</a></li>
+                    <li><a href="../About_Us/index.html">ABOUT US</a></li>
+                    <li><a href="../Customer_Support/index.html">CUSTOMER SUPPORT</a></li>
+                </ul>
+            </div>
+    </div>
+
+    <header class="page-header">
+        <h1>Order Page</h1>
+        <div class="header-line"></div>
+        <p>Select from our live, top-tier crayfish or equipment packages below and follow the checkout steps to place your order.</p>
+    </header>
+
+    <!-- SECTION 1: CRAYFISH -->
+    <section class="catalog-section" id="crayfish">
+        <h2>Crayfish Categories</h2>
+        <div class="product-grid">
+            <!-- Solo -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/solo.jpg" alt="Solo Crayfish"></div>
+                <h3>Solo</h3>
+                <p class="description">1 Single live Australian Red Claw crayfish. Perfect as a unique pet or starter specimen.</p>
+                <a href="#checkout-form" class="order-btn">Select Solo</a>
+            </div>
+            <!-- Duo -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/duo.jpg" alt="Solo Crayfish"></div>
+                <h3>Duo</h3>
+                <p class="description">A pair of healthy live crayfish. Ideal for pairing or small tank setups.</p>
+                <a href="#checkout-form" class="order-btn">Select Duo</a>
+            </div>
+            <!-- Trio -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/trio.jpg" alt="Solo Crayfish"></div>
+                <h3>Trio (Breeders)</h3>
+                <p class="description">1 male and 2 females. Recommended breeding ratio for starting your own cultivation.</p>
+                <a href="#checkout-form" class="order-btn">Select Trio</a>
+            </div>
+            <!-- Kilo -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/kilo.jpg" alt="Solo Crayfish"></div>
+                <h3>Kilo / Food Consumption</h3>
+                <p class="description">Fresh harvested crayfish sold per kilo, carefully packaged and ready for cooking.</p>
+                <a href="#checkout-form" class="order-btn">Select Kilo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: PRODUCTS -->
+    <section class="catalog-section" id="products">
+        <h2>Equipment & Products</h2>
+        <div class="product-grid">
+            <!-- Feeds -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/feed.jpg" alt="Solo Crayfish"></div>
+                <h3>Feeds</h3>
+                <p class="description">High-protein sinking pellets formulated for rapid growth and robust health.</p>
+                <a href="#checkout-form" class="order-btn">Select Feeds</a>
+            </div>
+            <!-- Beginner Setup -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/setup.jpg" alt="Solo Crayfish"></div>
+                <h3>Beginner Setup</h3>
+                <p class="description">Complete starter bundle: small trapal pond, hiding tubes, aerator, and starter feeds.</p>
+                <a href="#checkout-form" class="order-btn">Select Setup</a>
+            </div>
+            <!-- Trapalpond with Aerator -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/trapAe.jpg" alt="Solo Crayfish"></div>
+                <h3>Trapalpond with Aerator</h3>
+                <p class="description">Durable commercial-grade trapal pond bundled with a high-output oxygen aerator pump.</p>
+                <a href="#checkout-form" class="order-btn">Select Bundle</a>
+            </div>
+            <!-- Trapalpond Only -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/trap.jpg" alt="Solo Crayfish"></div>
+                <h3>Trapalpond Only</h3>
+                <p class="description">Heavy-duty thick PVC trapau/canvas pool structure built safely for aquaculture.</p>
+                <a href="#checkout-form" class="order-btn">Select Trapalpond</a>
+            </div>
+            <!-- Aerator Only -->
+            <div class="product-card">
+                <div class="img-placeholder"><img src="img/aerator.jpg" alt="Solo Crayfish"></div>
+                <h3>Aerator Only</h3>
+                <p class="description">Submersible/electric oxygen pump unit with air tubing and stones included.</p>
+                <a href="#checkout-form" class="order-btn">Select Aerator</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CHECKOUT FLOW SECTION (Following flowchart steps down to Place Order) -->
+    <section class="checkout-section" id="checkout-form">
+        <h2>Complete Your Checkout Flow</h2>
+        <div class="header-line"></div>
+        
+        <form class="flow-form">
+            
+            <div class="form-step">
+                <label for="selected-item">Selected Item / Type:</label>
+                <input type="text" id="selected-item" value="Click a button above to choose" readonly>
+            </div>
+
+            <div class="form-step">
+                <label for="input-amount">Input Amount / Quantity:</label>
+                <input type="number" id="input-amount" placeholder="e.g., 2 (pieces or kilos)" min="1" required>
+            </div>
+
+            <div class="form-step">
+                <label for="choose-size">Choose Size (if applicable):</label>
+                <select id="choose-size">
+                    <option value="Standard">Standard / Medium</option>
+                    <option value="Small">Small / Fingerlings</option>
+                    <option value="Large">Large / Jumbo</option>
+                    <option value="N/A">N/A (For Feeds/Equipment)</option>
+                </select>
+            </div>
+
+            <div class="form-step">
+                <label for="recipient-name">Input Name of Recipient:</label>
+                <input type="text" id="recipient-name" placeholder="Full Name" required>
+            </div>
+
+            <div class="form-step">
+                <label for="phone-number">Input Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="09XXXXXXXXX" required>
+            </div>
+
+            <div class="form-step">
+                <label for="address">Input Address:</label>
+                <textarea id="address" rows="3" placeholder="Complete delivery address" required></textarea>
+            </div>
+
+            <div class="form-step payment-box">
+                <label>Our Online Wallet / Bank QR Code:</label>
+                <div class="qr-placeholder">
+                    <span>[ GCash / Maya / Bank QR Code Image ]</span>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <label for="payment-screenshot">Attach Screenshot of Payment:</label>
+                <input type="file" id="payment-screenshot" accept="image/*" required>
+            </div>
+
+            <button type="submit" class="submit-order-btn">PLACE ORDER</button>
+        </form>
+    </section>
+</body>
+</html>
