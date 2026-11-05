@@ -521,3 +521,62 @@ body {
     .menu ul { gap: 20px; flex-wrap: wrap; }
     .about-title h1 { font-size: 32px; }
 }
+
+@media (max-width:750px){
+    .navbar{
+        height: 65px;
+    }
+
+    .icon{
+        width:80px;
+        min-width:85px;
+    }
+
+    .icon img{
+        padding-left:20px;
+        width:55px;
+    }
+
+    .menu{
+        height:auto;
+        min-height:75px;
+        overflow:visible;
+    }
+
+    .menu ul{
+        height:auto;
+        min-height:75px;
+        flex-wrap:wrap;
+        gap:12px 25px;
+        padding:15px 10px;
+    }
+
+    .menu ul li{
+        font-size:9px;
+    }
+}
+
+@media (max-width:500px){
+    .navbar{
+        height: 55px;
+    }
+
+    .icon{
+        width:60px;
+        min-width:70px;
+    }
+
+    .icon img{
+        padding-left:15px;
+        width:45px;
+    }
+
+    .menu ul{
+        gap:10px 15px;
+        padding:12px 5px;
+    }
+
+    .menu ul li{
+        font-size:8px;
+    }
+}
